@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "nombre": "The Legend of Zelda",
+    "precio": 1199,
+    "imagen": "img/zelda.jpg",
+    "consola": "Nintendo Switch"
+  },
+  {
+    "id": 2,
+    "nombre": "God of War",
+    "precio": 999,
+    "imagen": "img/god_of_war.jpg",
+    "consola": "PlayStation 5"
+  },
+  {
+    "id": 3,
+    "nombre": "Halo Infinite",
+    "precio": 799,
+    "imagen": "img/halo.jpg",
+    "consola": "Xbox Series X"
+  },
+  {
+    "id": 4,
+    "nombre": "Mario Kart 8",
+    "precio": 1099,
+    "imagen": "img/mario.jpg",
+    "consola": "Nintendo Switch"
+  },
+  {
+    "id": 5,
+    "nombre": "Spider-Man",
+    "precio": 899,
+    "imagen": "img/spiderman.jpg",
+    "consola": "PlayStation 5"
+  },
+  {
+    "id": 6,
+    "nombre": "Forza Horizon 5",
+    "precio": 799,
+    "imagen": "img/forza.jpg",
+    "consola": "Xbox Series X"
+  }
+]

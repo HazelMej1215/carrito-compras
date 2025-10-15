@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameStore - Tu tienda de videojuegos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header con el título y botones de sesión -->
+    <header>
+        <div class="container">
+            <h1>🎮 GameStore</h1>
+            <div id="userSection">
+                <button id="btnLogin" class="btn-secondary">Iniciar Sesión</button>
+                <button id="btnRegister" class="btn-secondary">Registrarse</button>
+            </div>
+            <button id="btnCarrito" class="btn-cart">
+                🛒 Carrito (<span id="cantidadCarrito">0</span>)
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección principal con el catálogo -->
+    <main class="container">
+        <h2>Catálogo de Juegos</h2>
+        <div id="catalogo" class="catalogo">
+            <!-- Aquí se van a cargar los productos desde el JSON -->
+        </div>
+    </main>
+
+    <!-- Modal de Login -->
+    <div id="modalLogin" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modalLogin">&times;</span>
+        <h2>Iniciar Sesión</h2>
+        <form id="formLogin">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Contraseña" required>
+            <button type="submit" class="btn-primary">Entrar</button>
+        </form>
+        <p class="modal-link">
+            ¿No tienes cuenta? <a href="#" id="linkRegistro">Regístrate aquí</a>
+        </p>
+    </div>
+</div>
+
+    <!-- Modal de Registro -->
+<div id="modalRegister" class="modal">
+    <div class="modal-content">
+        <span class="close" data-modal="modalRegister">&times;</span>
+        <h2>Registrarse</h2>
+        <form id="formRegister">
+            <input type="text" id="registerNombre" placeholder="Nombre completo" required>
+            <input type="email" id="registerEmail" placeholder="Email" required>
+            <input type="password" id="registerPassword" placeholder="Contraseña" required>
+            <button type="submit" class="btn-primary">Crear cuenta</button>
+        </form>
+        <p class="modal-link">
+            ¿Ya tienes cuenta? <a href="#" id="linkLogin">Inicia sesión aquí</a>
+        </p>
+    </div>
+</div>
+
+    <!-- Modal del Carrito -->
+    <div id="modalCarrito" class="modal">
+        <div class="modal-content modal-carrito">
+            <span class="close" data-modal="modalCarrito">&times;</span>
+            <h2>Tu Carrito de Compras</h2>
+            <div id="listaCarrito">
+                <!-- Los productos del carrito se mostrarán aquí -->
+            </div>
+            <div class="carrito-total">
+                <h3>Total: $<span id="totalCarrito">0.00</span></h3>
+                <button id="btnComprar" class="btn-primary">Realizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cargar el TypeScript compilado -->
+    <script src="app.js"></script>
+</body>
+</html>
